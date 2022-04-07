@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/black"
+    android:gravity="top"
+    tools:context=".activitys.ShowAllSaveSesionActivity">
+
+    <ListView
+        android:id="@+id/listView_showAllSessionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/newSession_showAllSessionActivity"
+        android:foregroundGravity="top"
+        android:layout_margin="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newSession_showAllSessionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:text="New Session"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activitys.SaveSession">
+
+    <LinearLayout
+        android:id="@+id/tempLinearLayout_saveSessionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/stroke_white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :    "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/timeTxt_saveSessionActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Length :    "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/lengthTxt_saveSessionActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journal entry :  "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/journalEdit_saveSessionActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter journal comment"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempLinearLayout_saveSessionFragment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewAllJournalBtn_saveSessionActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke_white_no_background"
+            android:text="View All"
+            android:textColor="@color/white"
+            android:typeface="serif" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveJournalBtn_saveSessionActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke_white_no_background"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:typeface="serif" />
+    </LinearLayout>
+
+
+</RelativeLayout>

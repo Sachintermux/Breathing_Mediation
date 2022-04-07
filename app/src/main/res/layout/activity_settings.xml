@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".activitys.SettingsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newSession_Settings"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/stroke_white"
+        android:fillViewport="true"
+        android:paddingBottom="20dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:text="Breath cycle(seconds)"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekBarBreathGroup"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Breath In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize"
+
+                    />
+
+                <TextView
+                    android:id="@+id/breathIn_txtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="@fraction/breathGroupValueSize"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize"
+
+                    />
+
+                <SeekBar
+                    android:id="@+id/breathIn_slider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:max="15"
+                    android:textSize="@dimen/breathGroupTextSize" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekBarBreathGroup"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Hold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize"
+
+                    />
+
+                <TextView
+                    android:id="@+id/hold1_txtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="@fraction/breathGroupValueSize"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize"
+
+                    />
+
+                <SeekBar
+                    android:id="@+id/hold1_slider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:max="15"
+                    android:textSize="@dimen/breathGroupTextSize"
+
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekBarBreathGroup"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Breath Out"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/breathOut_txtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="@fraction/breathGroupValueSize"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <SeekBar
+                    android:id="@+id/breathOut_slider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:max="15" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekBarBreathGroup"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Hold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/hold2_txtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="@fraction/breathGroupValueSize"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <SeekBar
+                    android:id="@+id/hold2_slider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:max="15" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:text="Session (minutes)"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekBarBreathGroup"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Duration"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/duration_txtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="@fraction/breathGroupValueSize"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <SeekBar
+                    android:id="@+id/duration_slider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:max="30" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:text="Interval Sounds"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/noSound_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/intervalRadioGroupSize"
+                    android:text="No Sound"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <RadioButton
+                    android:id="@+id/bells_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/intervalRadioGroupSize"
+                    android:text="Bells"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <RadioButton
+                    android:id="@+id/voice_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/intervalRadioGroupSize"
+                    android:text="Voice"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Remind Me"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/delete_listIc"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/check_bottom_nav_color" />
+
+                <ImageView
+                    android:id="@+id/add_listIc"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/check_bottom_nav_color" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/remind_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:fillViewport="true"
+
+                    android:nestedScrollingEnabled="true" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:text="Default Settings"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:columnCount="3"
+                android:rowCount="2">
+
+
+                <TextView
+                    android:id="@+id/default_beginner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="beginnerClick"
+                    android:text="Beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+
+                <TextView
+                    android:id="@+id/default_moderate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="moderateClick"
+                    android:text="Moderate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+
+                <TextView
+                    android:id="@+id/default_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="advanceClick"
+                    android:text="Advance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/default_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="morningClick"
+                    android:text="@string/firstBtn_default"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/default_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="eveningClick"
+                    android:text="@string/secondBtn_default"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+
+                <TextView
+                    android:id="@+id/default_night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="3dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="nightClick"
+                    android:text="@string/thirdBtn_default"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathGroupTextSize" />
+            </GridLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newSession_Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigationSetting"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke_white"
+        android:gravity="center"
+        android:onClick="newSessionClick"
+        android:padding="10dp"
+        android:text="Save Settings"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigationSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_bottom_nav"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

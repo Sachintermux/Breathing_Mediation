@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="breathGroupTextSize">12sp</dimen>
+    <dimen name="intervalRadioGroupSize">36dp</dimen>
+    <dimen name="seekBarBreathGroup">36dp</dimen>
+    <dimen name="breathingTimeRule">30sp</dimen>
+    <dimen name="textUnder_dialog">15sp</dimen>
+    <dimen name="paddingFor_txt">30dp</dimen>
+</resources>

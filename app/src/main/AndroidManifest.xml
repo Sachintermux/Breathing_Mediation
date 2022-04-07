@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cipherapps.breathingmeditation">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BreathingExercise">
+        <activity
+            android:name="com.cipherapps.breathingmeditation.activitys.ShowAllSaveSesionActivity"
+            android:exported="false"
+            android:label="View Save Session"
+            android:parentActivityName="com.cipherapps.breathingmeditation.activitys.MainActivity" />
+        <activity
+            android:name="com.cipherapps.breathingmeditation.activitys.SaveSession"
+            android:exported="false"
+            android:label="Save Session"
+            android:parentActivityName="com.cipherapps.breathingmeditation.activitys.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cipherapps.breathingmeditation.activitys.SettingsActivity"
+            android:exported="false"
+            android:label="Settings"
+            android:parentActivityName="com.cipherapps.breathingmeditation.activitys.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cipherapps.breathingmeditation.activitys.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.cipherapps.breathingmeditation.savedata.Show_NotificationBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+    </application>
+
+</manifest>

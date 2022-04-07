@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke_white_no_background"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/tempLinearLayout_remindDialog"
+            android:layout_alignParentTop="true">
+
+            <EditText
+                android:id="@+id/titleEdt_remindDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="Notification Title"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edtTxt_hintColor"
+                android:textSize="20sp"
+                android:inputType="textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/shortDescEdt_remindDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Short Description"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edtTxt_hintColor"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"/>
+
+            <TimePicker
+                android:id="@+id/timePicker_remindDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:numbersBackgroundColor="@color/white"
+                android:numbersSelectorColor="@color/light_green"
+                android:numbersTextColor="@color/light_blue" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/tempLinearLayout_remindDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteBtn_remindDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/check_bottom_nav_color"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBtn_remindDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/check_bottom_nav_color"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/okBtn_remindDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/check_bottom_nav_color"
+            android:text="Ok"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

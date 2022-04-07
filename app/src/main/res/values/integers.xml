@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="breathGroupValueSize">0.6</fraction>
+
+    //4-7-8-2 Exercise Rule
+    <integer name="morningBreathIn">4</integer>
+    <integer name="morningHold1">7</integer>
+    <integer name="morningBreathOut">8</integer>
+    <integer name="morningHold2">2</integer>
+    <integer name="morningTimeDuration">10</integer>
+
+    //5-5-5-3 Exercise Rule
+    <integer name="eveningBreathIn">5</integer>
+    <integer name="eveningHold1">5</integer>
+    <integer name="eveningBreathOut">5</integer>
+    <integer name="eveningHold2">3</integer>
+    <integer name="eveningTimeDuration">5</integer>
+
+    //7-8-9-2 Exercise Rule
+    <integer name="nightBreathIn">7</integer>
+    <integer name="nightHold1">8</integer>
+    <integer name="nightBreathOut">9</integer>
+    <integer name="nightHold2">2</integer>
+    <integer name="nightTimeDuration">5</integer>
+
+    //Beginner Exercise Rule
+    <integer name="beginnerBreathIn">5</integer>
+    <integer name="beginnerHold1">3</integer>
+    <integer name="beginnerBreathOut">5</integer>
+    <integer name="beginnerHold2">3</integer>
+    <integer name="beginnerTimeDuration">5</integer>
+
+    //Moderate Exercise Rule
+    <integer name="moderateBreathIn">7</integer>
+    <integer name="moderateHold1">5</integer>
+    <integer name="moderateBreathOut">7</integer>
+    <integer name="moderateHold2">5</integer>
+    <integer name="moderateTimeDuration">10</integer>
+
+    //Advance Exercise Rule
+    <integer name="advanceBreathIn">9</integer>
+    <integer name="advanceHold1">6</integer>
+    <integer name="advanceBreathOut">9</integer>
+    <integer name="advanceHold2">6</integer>
+    <integer name="advanceTimeDuration">15</integer>
+
+</resources>

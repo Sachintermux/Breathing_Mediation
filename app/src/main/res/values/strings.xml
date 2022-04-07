@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Breathing Meditation</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="durationTAG">TIMER_DURATION</string>
+    <string name="breathInDurationTAG">BREATHIN_DURATION</string>
+    <string name="breathOutDurationTAG">BREATHOUT_DURATION</string>
+    <string name="hold1DurationTAG">HOLD1_DURATION</string>
+    <string name="hold2DurationTAG">HOLD2_DURATION</string>
+    <string name="RemindListTAG">REMIND_LIST_TAG</string>
+    <string name="soundSelectionTAG">SOUND_SELECTION</string>
+    <string name="sessionComplete_message">Session Completed.</string>
+    <string name="SaveAllSessionTAG">SaveAllSessionTAG</string>
+    <string name="firstBtn_default">4-7-8-2</string>
+    <string name="secondBtn_default">5-5-5-3</string>
+    <string name="thirdBtn_default">7-8-9-2</string>
+
+
+<!--    AdView IDs-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="morning_text">4-7-8-2</string>
+    <string name="evening_text">5-5-5-3</string>
+    <string name="night_text">7-8-9-2</string>
+    <string name="appplayStoreLink">https://play.google.com/store/apps/details?id=com.cipherapps.breathingmeditation</string>
+
+
+</resources>

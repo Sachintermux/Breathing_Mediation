@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingTop="50dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="50dp">
+
+
+    <TextView
+        android:id="@+id/morning_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:text="@string/morning_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog" />
+
+    <TextView
+        android:id="@+id/evening_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:text="@string/evening_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog" />
+
+    <TextView
+        android:id="@+id/night_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:text="@string/night_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog" />
+
+    <TextView
+        android:id="@+id/beginner_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:text="Beginner"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog"
+        />
+
+    <TextView
+        android:id="@+id/moderate_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingTop="10dp"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:paddingBottom="10dp"
+        android:text="Moderate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog"
+
+        />
+
+    <TextView
+        android:id="@+id/advance_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingTop="10dp"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:paddingBottom="10dp"
+        android:text="Advance"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog" />
+
+    <TextView
+        android:id="@+id/custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/stroke_white_no_background"
+        android:gravity="center"
+        android:paddingLeft="@dimen/paddingFor_txt"
+        android:paddingTop="10dp"
+        android:paddingRight="@dimen/paddingFor_txt"
+        android:paddingBottom="10dp"
+        android:text="Custom"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textUnder_dialog" />
+
+</LinearLayout>

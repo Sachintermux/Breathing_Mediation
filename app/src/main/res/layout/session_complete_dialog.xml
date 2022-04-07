@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sessionComplete_message"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/sessionCompleteMessage_txtDialog"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/sessionCompleteMessage_txtDialog"
+        android:layout_alignParentRight="true"
+        android:id="@+id/saveComplete_BtnDialog"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/cancelComplete_BtnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sessionCompleteMessage_txtDialog"
+        android:layout_toStartOf="@+id/saveComplete_BtnDialog"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

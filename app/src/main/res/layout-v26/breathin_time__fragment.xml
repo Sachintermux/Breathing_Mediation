@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke_white_no_background"
+    tools:context=".fragments.BreathingTime_Fragment"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Breathing Rule"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/breathIn_txtFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" - "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:id="@+id/breathHold1_txtFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" - "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:id="@+id/breathOut_txtFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" - "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+                <TextView
+                    android:id="@+id/breathHold2_txtFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/breathingTimeRule" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ruleChange_txtFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/stroke_white"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="Change the Rule"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/breathingTimeRule" />
+
+            <TextView
+                android:id="@+id/showTime_txtFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="05:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/breathingTimeRule" />
+
+            <TextView
+                android:id="@+id/breathIndicator"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Breath In"
+                android:textColor="#00FF00"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
