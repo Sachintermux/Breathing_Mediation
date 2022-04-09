@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setSelectedItemId(R.id.home_tab);
 
         MobileAds.initialize(this);
-        AdLoader adLoader = new AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        AdLoader adLoader = new AdLoader.Builder(this, "ca-app-pub-6834680172649663/4465181395")
                 .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
                     @Override
                     public void onNativeAdLoaded(NativeAd nativeAd) {
@@ -204,5 +204,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
     }
     private InterstitialAd interstitialAd;
-    private static final String AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712";
+    private static final String AD_UNIT_ID = "ca-app-pub-6834680172649663/7474488116";
 }
