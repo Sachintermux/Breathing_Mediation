@@ -17,9 +17,12 @@ import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.ads.nativead.NativeAd;
@@ -77,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+    private AdView mAdView;
 
     private void initializeView() {
 
@@ -95,22 +99,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setOnNavigationItemSelectedListener(MainActivity.this);
         bottomNavigationView.setSelectedItemId(R.id.home_tab);
 
-        MobileAds.initialize(this);
-        AdLoader adLoader = new AdLoader.Builder(this, "ca-app-pub-6834680172649663/4465181395")
-                .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
-                    @Override
-                    public void onNativeAdLoaded(NativeAd nativeAd) {
-                        NativeTemplateStyle styles = new
-                                NativeTemplateStyle.Builder().build();
-                        TemplateView template = findViewById(R.id.my_template);
-                        template.setStyles(styles);
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete( InitializationStatus initializationStatus) {
+            }
+        });
 
-                        template.setNativeAd(nativeAd);
-                    }
-                })
-                .build();
+        mAdView = findViewById(R.id.bannerAdView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
-        adLoader.loadAd(new AdRequest.Builder().build());
+
+
         loadAd();
         observersViewModels();
 
@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         viewModel.showAds.observe(this, value ->{
             if(value){
                showInterstitial();
+               loadAd();
             }
         });
     }
@@ -155,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         AdRequest adRequest = new AdRequest.Builder().build();
         InterstitialAd.load(
                 this,
-                AD_UNIT_ID,
+                getString(R.string.interstitialAd_ID),
                 adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
@@ -204,5 +205,4 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
     }
     private InterstitialAd interstitialAd;
-    private static final String AD_UNIT_ID = "ca-app-pub-6834680172649663/7474488116";
 }

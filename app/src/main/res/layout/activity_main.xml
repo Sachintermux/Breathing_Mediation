@@ -18,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <androidx.fragment.app.FragmentContainerView
@@ -31,14 +32,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp" />
-            
-            <com.google.android.ads.nativetemplates.TemplateView
-                android:id="@+id/my_template"
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAdView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/bottom_navigationMain"
-                android:layout_marginTop="30dp"
-                app:gnt_template_type="@layout/gnt_medium_template_view" />
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="MEDIUM_RECTANGLE"
+                android:layout_gravity="center"
+                ads:adUnitId="@string/bannerAd_ID">
+            </com.google.android.gms.ads.AdView>
 
         </LinearLayout>
 

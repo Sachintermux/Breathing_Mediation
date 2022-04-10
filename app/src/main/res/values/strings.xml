@@ -11,6 +11,9 @@
     <string name="soundSelectionTAG">SOUND_SELECTION</string>
     <string name="sessionComplete_message">Session Completed.</string>
     <string name="SaveAllSessionTAG">SaveAllSessionTAG</string>
+
+
+
     <string name="firstBtn_default">4-7-8-2</string>
     <string name="secondBtn_default">5-5-5-3</string>
     <string name="thirdBtn_default">7-8-9-2</string>
@@ -18,9 +21,16 @@
 
 <!--    AdView IDs-->
     <string name="app_id">ca-app-pub-6834680172649663~5077718627</string>
+    <string name="bannerAd_ID">ca-app-pub-6834680172649663/4465181395</string>
+    <string name="interstitialAd_ID">ca-app-pub-6834680172649663/7474488116</string>
+
+
+
     <string name="morning_text">4-7-8-2</string>
     <string name="evening_text">5-5-5-3</string>
     <string name="night_text">7-8-9-2</string>
+
+
     <string name="appplayStoreLink">https://play.google.com/store/apps/details?id=com.cipherapps.breathingmeditation</string>
 
 
